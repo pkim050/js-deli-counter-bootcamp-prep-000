@@ -16,7 +16,7 @@ function nowServing(katzDeliLine) {
   else {
     var temp = katzDeliLine[0];
     katzDeliLine.pop();
-    return temp;
+    return `Currenty serving ${temp}`;
   }
 }
 
@@ -31,10 +31,10 @@ function currentLine(katzDeliLine) {
     for (var j = 0; j < katzDeliLine.length; j++) {
       tempArray = katzDeliLine[j];
       if (j === katzDeliLine.length - 1) {
-        tempString = tempString + `${counter}. ${tempArray},`
+        tempString = tempString + `${counter}. ${tempArray}`
       }
       else {
-        tempString = tempString + `${counter}. ${tempArray},`
+        tempString = tempString + `${counter}. ${tempArray}, `
       }
       counter++;
     }
